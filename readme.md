@@ -31,3 +31,15 @@ class Car {
         Brand = new CarBrand(brand);
     }
 }
+
+---
+
+## API
+
+The project integrates with:
+```
+https://plate.cornholio.dev/?plate=...
+```
+
+This API is **powered by Cloudflare Workers**, making it lightweight and serverless.  
+It allows users to fetch car details (brand, model, year) directly from a license plate lookup.  
