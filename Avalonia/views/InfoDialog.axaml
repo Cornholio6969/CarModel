@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="App.Views.InfoDialog"
+        Width="420" Height="220" CanResize="False"
+        WindowStartupLocation="CenterOwner"
+        Title="Info">
+  <Grid RowDefinitions="*,Auto" Margin="16">
+    <ScrollViewer>
+      <TextBlock x:Name="InfoText" TextWrapping="Wrap"/>
+    </ScrollViewer>
+    <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">
+      <Button Content="OK" IsDefault="True" Click="OnOk"/>
+    </StackPanel>
+  </Grid>
+</Window>

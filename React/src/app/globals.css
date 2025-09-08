@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* Reset / Base */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  margin: 1rem 0 0.5rem;
+  font-weight: 600;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Form elements */
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+input, select, textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  transition: filter 0.2s, transform 0.05s;
+}
+button:active {
+  transform: translateY(1px);
+}
+button[type="submit"] {
+  background: #16a34a; /* green */
+  color: #fff;
+}
+button[type="reset"] {
+  background: #6b7280; /* gray */
+  color: #fff;
+  margin-left: 0.5rem;
+}
+button#carPlateModal {
+  background: #2563eb; /* blue */
+  color: #fff;
+  margin-left: 0.5rem;
+}
+button:hover {
+  filter: brightness(0.95);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+thead {
+  background: #e0e7ff;
+}
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+tbody tr:nth-child(odd) {
+  background: #f9fafb;
+}
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Misc */
+strong {
+  font-weight: 600;
+}

@@ -1,0 +1,32 @@
+/* Scoped styles for car page */
+.actionsCell {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+  transition: filter 0.2s;
+}
+.btn:hover {
+  filter: brightness(0.9);
+}
+
+.btnInfo {
+  background: #2563eb; /* blue */
+}
+.btnDanger {
+  background: #dc2626; /* red */
+}
+.btnWarning {
+  background: #f59e0b; /* yellow */
+}
+
+.actionsCell button:not(:last-child) {
+  margin-right: 0.5rem; /* adjust as needed */
+}

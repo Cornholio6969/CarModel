@@ -1,0 +1,15 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="App.Views.PlateDialog"
+        Width="360" Height="180" CanResize="False"
+        WindowStartupLocation="CenterOwner"
+        Title="Indtast nummerplade">
+  <StackPanel Margin="16" Spacing="12">
+    <TextBlock Text="Nummerplade"/>
+    <TextBox x:Name="PlateBox" Watermark="fx. AB12345"/>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Spacing="8">
+      <Button Content="Annuller" Click="OnCancel"/>
+      <Button Content="Slå op" IsDefault="True" Click="OnOk"/>
+    </StackPanel>
+  </StackPanel>
+</Window>

@@ -1,0 +1,66 @@
+.footer {
+  background: #0a58ca;
+  color: #fff;
+  padding: 2rem 1.5rem 1rem;
+  margin-top: 3rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.brand h2 {
+  margin: 0;
+}
+.brand p {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.links h4,
+.socials h4 {
+  margin-bottom: 0.8rem;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.links li {
+  margin-bottom: 0.5rem;
+}
+.links a {
+  text-decoration: none;
+  color: #fff;
+  transition: opacity 0.2s;
+}
+.links a:hover {
+  opacity: 0.7;
+}
+
+.socials .icons {
+  display: flex;
+  gap: 1rem;
+}
+.socials a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.2s;
+}
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
