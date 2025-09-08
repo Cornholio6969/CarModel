@@ -32,35 +32,6 @@ export default function Navbar() {
           <Link href="/cars" className={styles.link}>
             Cars
           </Link>
-
-          {/* Dropdown */}
-          <div
-            className={`${styles.dropdown} ${
-              isDropdownOpen ? styles.open : ""
-            }`}
-          >
-            <button
-              className={styles.dropdownToggle}
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            >
-              Services ▾
-            </button>
-            <div className={styles.dropdownMenu}>
-              <Link href="/services/web" className={styles.dropdownItem}>
-                Web Development
-              </Link>
-              <Link href="/services/mobile" className={styles.dropdownItem}>
-                Mobile Apps
-              </Link>
-              <Link href="/services/consulting" className={styles.dropdownItem}>
-                Consulting
-              </Link>
-            </div>
-          </div>
-
-          <Link href="/contact" className={styles.link}>
-            Contact
-          </Link>
         </div>
       </div>
     </nav>
